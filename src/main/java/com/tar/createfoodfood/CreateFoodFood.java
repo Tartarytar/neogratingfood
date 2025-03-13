@@ -86,6 +86,7 @@ public class CreateFoodFood
     {
         if (event.getTabKey() ==  CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.PIE_CRUST);
+            event.accept(ModItems.APPLE_HONEY_PIE);
         }
     }
 

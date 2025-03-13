@@ -10,7 +10,10 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(CreateFoodFood.MODID);
 
     public static final DeferredItem<Item> PIE_CRUST = ITEMS.register("pie_crust",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.PIE_CRUST)));
+    public static final DeferredItem<Item> APPLE_HONEY_PIE = ITEMS.register("apple_honey_pie",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.APPLE_HONEY_PIE)));
+
 
 
     public static void  register (IEventBus eventBus){
