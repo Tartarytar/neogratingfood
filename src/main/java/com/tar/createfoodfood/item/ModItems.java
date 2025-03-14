@@ -13,7 +13,10 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.PIE_CRUST)));
     public static final DeferredItem<Item> APPLE_HONEY_PIE = ITEMS.register("apple_honey_pie",
             () -> new Item(new Item.Properties().food(ModFoodProperties.APPLE_HONEY_PIE)));
-
+    public static final DeferredItem<Item> ENDER_DOUGH = ITEMS.register("ender_dough",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CHEESE = ITEMS.register("cheese",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.CHEESE)));
 
 
     public static void  register (IEventBus eventBus){

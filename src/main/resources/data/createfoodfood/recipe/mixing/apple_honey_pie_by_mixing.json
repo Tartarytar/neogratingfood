@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "createfoodfood:pie_crust"
+    },
+    {
+      "item": "create:honeyed_apple"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "createfoodfood:apple_honey_pie"
+      }
+    }
+  ]
+}
