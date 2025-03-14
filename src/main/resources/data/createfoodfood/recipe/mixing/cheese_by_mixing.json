@@ -6,9 +6,9 @@
       "item": "minecraft:brown_mushroom"
     },
     {
-      "type": "fluid_tag",
-      "amount": 250,
-      "fluid": "c:milk"
+      "type": "fluid_stack",
+      "amount": 1000,
+      "fluid": "minecraft:milk"
     }
   ],
   "results": [
