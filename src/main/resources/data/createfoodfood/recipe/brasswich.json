@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:bread"
+    },
+    "X": {
+      "item": "create:brass_sheet"
+    },
+    "Y": {
+      "item": "createfoodfood:cheese"
+    }
+  },
+  "pattern": [
+    " X ",
+    "Y#Y",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "createfoodfood:brasswich"
+  }
+}

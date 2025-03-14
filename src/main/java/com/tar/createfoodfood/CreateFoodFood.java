@@ -89,6 +89,9 @@ public class CreateFoodFood
             event.accept(ModItems.APPLE_HONEY_PIE);
             event.accept(ModItems.ENDER_DOUGH);
             event.accept(ModItems.CHEESE);
+            event.accept(ModItems.BERRY_PIE);
+            event.accept(ModItems.BRASSWICH);
+            event.accept(ModItems.COOKED_EGG);
         }
     }
 
