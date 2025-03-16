@@ -5,6 +5,15 @@
       "item": "minecraft:popped_chorus_fruit"
     },
     {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    {
       "item": "minecraft:ender_pearl"
     },
     {
@@ -15,7 +24,6 @@
   ],
   "results": [
     {
-      "count": 4,
       "item": {
         "id": "createfoodfood:ender_dough"
       }
