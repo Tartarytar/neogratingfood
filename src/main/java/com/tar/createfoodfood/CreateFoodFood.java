@@ -92,6 +92,7 @@ public class CreateFoodFood
             event.accept(ModItems.BERRY_PIE);
             event.accept(ModItems.BRASSWICH);
             event.accept(ModItems.COOKED_EGG);
+            event.accept(ModItems.POTION_COOKIE);
         }
     }
 
