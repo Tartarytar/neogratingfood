@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 1000,
+      "fluid": "minecraft:milk"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "item": {
+        "id": "createfoodfood:cheese"
+      }
+    }
+  ]
+}

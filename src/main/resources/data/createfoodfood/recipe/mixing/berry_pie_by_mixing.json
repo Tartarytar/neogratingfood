@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "createfoodfood:pie_crust"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "createfoodfood:berry_pie"
+      }
+    }
+  ]
+}
