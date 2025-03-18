@@ -16,4 +16,5 @@ public class ModFoodProperties {
             .alwaysEdible()
             .build();
     public static final FoodProperties COOKED_EGG = new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).fast().build();;
+    public static final FoodProperties ENDER_DOUGH = new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).fast().build();;
 }

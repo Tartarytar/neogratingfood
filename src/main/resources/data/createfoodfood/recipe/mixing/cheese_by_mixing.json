@@ -7,13 +7,13 @@
     },
     {
       "type": "fluid_stack",
-      "amount": 1000,
+      "amount": 500,
       "fluid": "minecraft:milk"
     }
   ],
   "results": [
     {
-      "count": 4,
+      "count": 2,
       "item": {
         "id": "createfoodfood:cheese"
       }

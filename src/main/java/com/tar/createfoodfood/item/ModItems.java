@@ -17,7 +17,7 @@ public class ModItems {
     public static final DeferredItem<Item> APPLE_HONEY_PIE = ITEMS.register("apple_honey_pie",
             () -> new Item(new Item.Properties().food(ModFoodProperties.APPLE_HONEY_PIE)));
     public static final DeferredItem<Item> ENDER_DOUGH = ITEMS.register("ender_dough",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.ENDER_DOUGH)));
     public static final DeferredItem<Item> CHEESE = ITEMS.register("cheese",
             () -> new Item(new Item.Properties().food(ModFoodProperties.CHEESE)));
     public static final DeferredItem<Item> BERRY_PIE = ITEMS.register("berry_pie",

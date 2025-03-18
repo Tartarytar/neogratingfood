@@ -1,5 +1,6 @@
 {
   "type": "create:mixing",
+  "heat_requirement": "heated",
   "ingredients": [
     {
       "item": "minecraft:popped_chorus_fruit"
