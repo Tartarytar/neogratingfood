@@ -11,6 +11,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.PotionBrewing;
 import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.level.ItemLike;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.Event;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -36,10 +37,10 @@ import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.NotNull;
 
 import static com.tar.createfoodfood.Config.items;
+import static com.tar.createfoodfood.CreateFoodFood.MODID;
 
-@EventBusSubscriber(modid = CreateFoodFood.MODID, bus = EventBusSubscriber.Bus.GAME)
+@EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.GAME)
 public class ModEvents {
-
     @SubscribeEvent
     public static void onBrewingRecipeRegister(RegisterBrewingRecipesEvent event){
         PotionBrewing.Builder builder = event.getBuilder();
@@ -48,14 +49,16 @@ public class ModEvents {
         builder.addContainerRecipe(Items.POTION, ModItems.ENDER_DOUGH.get(), ModItems.POTION_COOKIE.get());
     }
 
-
-
-    public static void potionre(RegisterColorHandlersEvent.@NotNull Item potionrx){
-        potionrx.register(
-                (p_329703_, p_329704_) -> p_329704_ > 0
-                ? -1
-                : FastColor.ARGB32.opaque(p_329703_.getOrDefault(DataComponents.POTION_CONTENTS, PotionContents.EMPTY).getColor()),
-                 ModItems.POTION_COOKIE.get()
-                );
+@EventBusSubscriber(modid = MODID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
+public class ClientEvents {
+    @SubscribeEvent
+    public static void registerItemColors(final RegisterColorHandlersEvent.Item event) {
+        event.register(
+                           (p_329703_, p_329704_) -> p_329704_ > 0
+                            ? -1
+                            : FastColor.ARGB32.opaque(p_329703_.getOrDefault(DataComponents.POTION_CONTENTS, PotionContents.EMPTY).getColor()),
+                             ModItems.POTION_COOKIE.get()
+                            );
         }
     }
+}
