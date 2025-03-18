@@ -26,9 +26,16 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.BRASSWICH)));
     public static final DeferredItem<Item> COOKED_EGG = ITEMS.register("cooked_egg",
             () -> new Item(new Item.Properties().food(ModFoodProperties.COOKED_EGG)));
+    public static final DeferredItem<Item> BERRY_JAM = ITEMS.register("berry_jam",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BERRY_JAM)));
+    public static final DeferredItem<Item> RAW_PIE_CRUST= ITEMS.register("raw_pie_crust",
+            () -> new Item(new Item.Properties()));
+
+
 
     public static final DeferredItem<Item> POTION_COOKIE = ITEMS.register("potion_cookie",
             () -> new PotionItem(new Item.Properties().stacksTo(16).component(DataComponents.POTION_CONTENTS, PotionContents.EMPTY)));
+
 
 
     public static void  register (IEventBus eventBus){

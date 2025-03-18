@@ -93,6 +93,8 @@ public class CreateFoodFood
             event.accept(ModItems.BRASSWICH);
             event.accept(ModItems.COOKED_EGG);
             event.accept(ModItems.POTION_COOKIE);
+            event.accept(ModItems.BERRY_JAM);
+            event.accept(ModItems.RAW_PIE_CRUST);
         }
     }
 

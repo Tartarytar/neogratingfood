@@ -3,16 +3,16 @@
   "heat_requirement": "heated",
   "ingredients": [
     {
-      "item": "createfoodfood:pie_crust"
+      "item": "minecraft:sugar"
     },
     {
-      "item": "minecraft:sweet_berries"
+      "item": "create:dough"
     }
   ],
   "results": [
     {
       "item": {
-        "id": "createfoodfood:berry_pie"
+        "id": "createfoodfood:raw_pie_crust"
       }
     }
   ]

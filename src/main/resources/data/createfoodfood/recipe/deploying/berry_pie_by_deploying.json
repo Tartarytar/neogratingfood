@@ -1,0 +1,18 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createfoodfood:pie_crust"
+    },
+    {
+      "item": "createfoodfood:berry_jam"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "createfoodfood:berry_pie"
+      }
+    }
+  ]
+}

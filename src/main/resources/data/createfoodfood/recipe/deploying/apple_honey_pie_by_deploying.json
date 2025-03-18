@@ -1,6 +1,5 @@
 {
-  "type": "create:mixing",
-  "heat_requirement": "heated",
+  "type": "create:deploying",
   "ingredients": [
     {
       "item": "createfoodfood:pie_crust"
