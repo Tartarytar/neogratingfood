@@ -7,6 +7,10 @@
     "createfoodfood:brasswich",
     "createfoodfood:raw_pie_crust",
     "createfoodfood:cheese_pie",
-    "createfoodfood:ender_pie"
+    "createfoodfood:ender_pie",
+    "createfoodfood:odd_pie",
+    "createfoodfood:stacked_pie",
+    "createfoodfood:berry_jelly",
+    "createfoodfood:incomplete_odd_pie"
   ]
 }

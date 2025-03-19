@@ -1,0 +1,18 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createfoodfood:pie_crust"
+    },
+    {
+      "item": "minecraft:pumpkin_pie"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "createfoodfood:stacked_pie"
+      }
+    }
+  ]
+}

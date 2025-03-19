@@ -30,5 +30,38 @@ public class ModFoodProperties {
             .fast()
             .build();
     public static final FoodProperties BERRY_JAM = new FoodProperties.Builder().nutrition(2).saturationModifier(1f).fast().build();
+    public static final FoodProperties BERRY_JELLY = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationModifier(1.5f)
+            .effect(new MobEffectInstance(MobEffects.GLOWING, 300, 0), 1.0F)
+            .fast()
+            .build();
     public static final FoodProperties CHEESE_PIE = new FoodProperties.Builder().nutrition(5).saturationModifier(0.5f).fast().build();
+    public static final FoodProperties ODD_MEAT = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationModifier(0.2f)
+            .effect(new MobEffectInstance(MobEffects.HUNGER, 300, 0), 0.3F)
+            .build();
+    public static final FoodProperties ODD_SAUSAGE = new FoodProperties.Builder()
+            .nutrition(4)
+            .saturationModifier(0.2f)
+            .effect(new MobEffectInstance(MobEffects.HUNGER, 200, 0), 0.2F)
+            .effect(new MobEffectInstance(MobEffects.SATURATION, 2, 0), 0.5F)
+            .build();
+    public static final FoodProperties ODD_PIE = new FoodProperties.Builder()
+            .nutrition(5)
+            .saturationModifier(0.5f)
+            .effect(new MobEffectInstance(MobEffects.HUNGER, 150, 0), 0.2F)
+            .effect(new MobEffectInstance(MobEffects.SATURATION, 2, 0), 0.4F)
+            .effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 300, 0), 0.4F)
+            .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300, 0), 0.5F)
+            .effect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 300, 0), 0.4F)
+            .effect(new MobEffectInstance(MobEffects.DIG_SPEED, 300, 0), 0.5F)
+            .effect(new MobEffectInstance(MobEffects.WEAKNESS, 300, 0), 0.4F)
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 300, 0), 0.5F)
+            .effect(new MobEffectInstance(MobEffects.POISON, 300, 0), 0.4F)
+            .effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 0.5F)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties STACKED_PIE = new FoodProperties.Builder().nutrition(9).saturationModifier(0.8f).build();
 }

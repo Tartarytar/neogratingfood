@@ -84,15 +84,20 @@ public class CreateFoodFood
         if (event.getTabKey() ==  CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.RAW_PIE_CRUST);
             event.accept(ModItems.PIE_CRUST);
+            event.accept(ModItems.STACKED_PIE);
             event.accept(ModItems.APPLE_HONEY_PIE);
             event.accept(ModItems.BERRY_PIE);
             event.accept(ModItems.CHEESE_PIE);
             event.accept(ModItems.ENDER_PIE);
+            event.accept(ModItems.ODD_PIE);
             event.accept(ModItems.BRASSWICH);
             event.accept(ModItems.ENDER_DOUGH);
             event.accept(ModItems.CHEESE);
             event.accept(ModItems.COOKED_EGG);
+            event.accept(ModItems.ODD_MEAT);
+            event.accept(ModItems.ODD_SAUSAGE);
             event.accept(ModItems.BERRY_JAM);
+            event.accept(ModItems.BERRY_JELLY);
             event.accept(ModItems.POTION_COOKIE);
             //event.holders()
             //        .lookup(Registries.POTION)

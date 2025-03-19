@@ -1,0 +1,76 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createfoodfood:pie_crust"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": {
+        "id": "createfoodfood:odd_pie"
+      }
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createfoodfood:incomplete_odd_pie"
+        },
+        {
+          "item": "createfoodfood:odd_sausage"
+        }
+      ],
+
+      "results": [
+        {
+          "item": {
+            "id": "createfoodfood:incomplete_odd_pie"
+          }
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createfoodfood:incomplete_odd_pie"
+        },
+        {
+          "item": "minecraft:bone_meal"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "createfoodfood:incomplete_odd_pie"
+          }
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createfoodfood:incomplete_odd_pie"
+        },
+        {
+          "item": "minecraft:spider_eye"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "createfoodfood:incomplete_odd_pie"
+          }
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "item": {
+      "id": "createfoodfood:incomplete_odd_pie"
+    }
+  }
+}
