@@ -1,0 +1,18 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createfoodfood:pie_crust"
+    },
+    {
+      "item": "createfoodfood:ender_dough"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "createfoodfood:ender_pie"
+      }
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 package com.tar.createfoodfood;
 
 import com.tar.createfoodfood.item.ModItems;
+import net.minecraft.world.item.*;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -10,10 +11,6 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -84,17 +81,30 @@ public class CreateFoodFood
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTabKey() ==  CreativeModeTabs.INGREDIENTS) {
+        if (event.getTabKey() ==  CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.RAW_PIE_CRUST);
             event.accept(ModItems.PIE_CRUST);
             event.accept(ModItems.APPLE_HONEY_PIE);
+            event.accept(ModItems.BERRY_PIE);
+            event.accept(ModItems.CHEESE_PIE);
+            event.accept(ModItems.ENDER_PIE);
+            event.accept(ModItems.BRASSWICH);
             event.accept(ModItems.ENDER_DOUGH);
             event.accept(ModItems.CHEESE);
-            event.accept(ModItems.BERRY_PIE);
-            event.accept(ModItems.BRASSWICH);
             event.accept(ModItems.COOKED_EGG);
-            event.accept(ModItems.POTION_COOKIE);
             event.accept(ModItems.BERRY_JAM);
-            event.accept(ModItems.RAW_PIE_CRUST);
+            event.accept(ModItems.POTION_COOKIE);
+            //event.holders()
+            //        .lookup(Registries.POTION)
+            //        .ifPresent(
+            //                p_337917_ -> generatePotionEffectTypes(
+            //                        p_337924_,
+            //                        p_337917_,
+            //                        ModItems.POTION_COOKIE,
+            //                        CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS,
+            //                        p_337923_.enabledFeatures()
+            //                )
+            //        );
         }
     }
 

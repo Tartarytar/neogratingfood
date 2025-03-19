@@ -1,0 +1,27 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createfoodfood:pie_crust"
+    },
+    {
+      "item": "createfoodfood:cheese"
+    },
+    {
+      "item": "createfoodfood:cheese"
+    },
+    {
+      "item": "createfoodfood:cheese"
+    },
+    {
+      "item": "createfoodfood:cheese"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "createfoodfood:cheese_pie"
+      }
+    }
+  ]
+}

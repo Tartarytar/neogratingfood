@@ -2,6 +2,7 @@ package com.tar.createfoodfood.item;
 
 import com.tar.createfoodfood.CreateFoodFood;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.item.ChorusFruitItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PotionItem;
 import net.minecraft.world.item.alchemy.PotionContents;
@@ -15,9 +16,12 @@ public class ModItems {
     public static final DeferredItem<Item> PIE_CRUST = ITEMS.register("pie_crust",
             () -> new Item(new Item.Properties().food(ModFoodProperties.PIE_CRUST)));
     public static final DeferredItem<Item> APPLE_HONEY_PIE = ITEMS.register("apple_honey_pie",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.APPLE_HONEY_PIE)));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.APPLE_HONEY_PIE)
+                    .stacksTo(16)));
     public static final DeferredItem<Item> ENDER_DOUGH = ITEMS.register("ender_dough",
-            () -> new Item(new Item.Properties().food(ModFoodProperties.ENDER_DOUGH)));
+            () -> new ChorusFruitItem(new Item.Properties().food(ModFoodProperties.ENDER_DOUGH)));
+    public static final DeferredItem<Item> ENDER_PIE = ITEMS.register("ender_pie",
+            () -> new ChorusFruitItem(new Item.Properties().food(ModFoodProperties.ENDER_PIE)));
     public static final DeferredItem<Item> CHEESE = ITEMS.register("cheese",
             () -> new Item(new Item.Properties().food(ModFoodProperties.CHEESE)));
     public static final DeferredItem<Item> BERRY_PIE = ITEMS.register("berry_pie",
@@ -30,6 +34,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.BERRY_JAM)));
     public static final DeferredItem<Item> RAW_PIE_CRUST= ITEMS.register("raw_pie_crust",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CHEESE_PIE = ITEMS.register("cheese_pie",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.CHEESE_PIE)));
 
 
 
