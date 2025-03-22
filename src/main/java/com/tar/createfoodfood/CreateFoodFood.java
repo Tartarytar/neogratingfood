@@ -1,6 +1,9 @@
 package com.tar.createfoodfood;
 
+import com.tar.createfoodfood.entity.ModEntities;
+import com.tar.createfoodfood.entity.client.MonsterPieRenderer;
 import com.tar.createfoodfood.item.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.*;
 import org.slf4j.Logger;
 
@@ -57,6 +60,7 @@ public class CreateFoodFood
 
 
         ModItems.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -128,6 +132,7 @@ public class CreateFoodFood
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            EntityRenderers.register(ModEntities.MONSTER_PIE.get(), MonsterPieRenderer::new);
         }
     }
 }

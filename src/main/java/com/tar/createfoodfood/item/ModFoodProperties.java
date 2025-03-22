@@ -8,7 +8,7 @@ public class ModFoodProperties {
     public static final FoodProperties PIE_CRUST = new FoodProperties.Builder().nutrition(5).saturationModifier(0.5f).build();
     public static final FoodProperties APPLE_HONEY_PIE = new FoodProperties.Builder()
             .nutrition(9)
-            .saturationModifier(2f)
+            .saturationModifier(1.8f)
             .effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1.0F)
             .alwaysEdible()
             .build();
