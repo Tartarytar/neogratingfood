@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "createfoodfood:item/monster_pie_spawn_egg"
+  }
+}

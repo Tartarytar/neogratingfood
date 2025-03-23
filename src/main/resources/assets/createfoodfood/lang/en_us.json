@@ -5,17 +5,21 @@
   "item.createfoodfood.ender_pie": "Ender Pie",
   "item.createfoodfood.cheese": "Cheese",
   "item.createfoodfood.berry_pie": "Berry Pie",
-  "item.createfoodfood.berry_jelly": "Berry Jelly",
   "item.createfoodfood.brasswich": "Brasswich",
   "item.createfoodfood.cooked_egg": "Cooked Egg",
   "item.createfoodfood.raw_pie_crust": "Raw Pie Crust",
   "item.createfoodfood.berry_jam": "Berry Jam",
   "item.createfoodfood.cheese_pie": "Cheese Pie",
   "item.createfoodfood.stacked_pie": "Stacked Pie",
+  "item.createfoodfood.berry_jelly": "Berry Jelly",
   "item.createfoodfood.odd_meat": "Odd Meat",
   "item.createfoodfood.odd_sausage": "Odd Sausage",
   "item.createfoodfood.odd_pie": "Odd Pie",
   "item.createfoodfood.incomplete_odd_pie": "Incomplete Odd Pie",
+  "item.createfoodfood.monster_pie_spawn_egg": "Pie Spawn Egg",
+  "item.createfoodfood.soul_pie": "Soul Pie",
+  "item.createfoodfood.cotton_candy": "Cotton Candy",
+
   "item.createfoodfood.potion_cookie": "Potion Cookie",
   "item.createfoodfood.potion_cookie.effect.awkward": "Awkward Potion Cookie",
   "item.createfoodfood.potion_cookie.effect.empty": "Uncraftable Potion Cookie",
@@ -42,5 +46,7 @@
   "item.createfoodfood.potion_cookie.effect.water_breathing": "Potion Cookie of Water Breathing",
   "item.createfoodfood.potion_cookie.effect.weakness": "Potion Cookie of Weakness",
   "item.createfoodfood.potion_cookie.effect.weaving": "Potion Cookie of Weaving",
-  "item.createfoodfood.potion_cookie.effect.wind_charged": "Potion Cookie of Wind Charging"
+  "item.createfoodfood.potion_cookie.effect.wind_charged": "Potion Cookie of Wind Charging",
+
+  "entity.mccourse.monster_pie": "Monster Pie"
 }

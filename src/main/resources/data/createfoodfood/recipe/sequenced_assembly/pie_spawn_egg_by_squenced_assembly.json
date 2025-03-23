@@ -1,13 +1,13 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "createfoodfood:pie_crust"
+    "item": "createfoodfood:odd_pie"
   },
   "loops": 1,
   "results": [
     {
       "item": {
-        "id": "createfoodfood:odd_pie"
+        "id": "createfoodfood:monster_pie_spawn_egg"
       }
     }
   ],
@@ -16,17 +16,17 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "createfoodfood:incomplete_odd_pie"
+          "item": "createfoodfood:incomplete_pie_egg"
         },
         {
-          "item": "minecraft:spider_eye"
+          "item": "createfoodfood:soul_pie"
         }
       ],
 
       "results": [
         {
           "item": {
-            "id": "createfoodfood:incomplete_odd_pie"
+            "id": "createfoodfood:incomplete_pie_egg"
           }
         }
       ]
@@ -35,16 +35,16 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "createfoodfood:incomplete_odd_pie"
+          "item": "createfoodfood:incomplete_pie_egg"
         },
         {
-          "item": "createfoodfood:odd_meat"
+          "item": "minecraft:pink_wool"
         }
       ],
       "results": [
         {
           "item": {
-            "id": "createfoodfood:incomplete_odd_pie"
+            "id": "createfoodfood:incomplete_pie_egg"
           }
         }
       ]
@@ -53,16 +53,16 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "createfoodfood:incomplete_odd_pie"
+          "item": "createfoodfood:incomplete_pie_egg"
         },
         {
-          "item": "minecraft:bone"
+          "item": "minecraft:blaze_powder"
         }
       ],
       "results": [
         {
           "item": {
-            "id": "createfoodfood:incomplete_odd_pie"
+            "id": "createfoodfood:incomplete_pie_egg"
           }
         }
       ]
@@ -70,7 +70,7 @@
   ],
   "transitional_item": {
     "item": {
-      "id": "createfoodfood:incomplete_odd_pie"
+      "id": "createfoodfood:incomplete_pie_egg"
     }
   }
 }

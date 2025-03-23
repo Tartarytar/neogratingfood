@@ -11,6 +11,9 @@
     "createfoodfood:odd_pie",
     "createfoodfood:stacked_pie",
     "createfoodfood:berry_jelly",
-    "createfoodfood:incomplete_odd_pie"
+    "createfoodfood:incomplete_odd_pie",
+    "createfoodfood:soul_pie",
+    "createfoodfood:monster_pie_spawn_egg",
+    "createfoodfood:incomplete_pie_egg"
   ]
 }

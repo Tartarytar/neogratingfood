@@ -1,12 +1,14 @@
 package com.tar.createfoodfood.item;
 
 import com.tar.createfoodfood.CreateFoodFood;
+import com.tar.createfoodfood.entity.ModEntities;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.ChorusFruitItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PotionItem;
 import net.minecraft.world.item.alchemy.PotionContents;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -46,11 +48,20 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.ODD_PIE)));
     public static final DeferredItem<Item> INCOMPLETE_ODD_PIE = ITEMS.register("incomplete_odd_pie",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> INCOMPLETE_PIE_EGG = ITEMS.register("incomplete_pie_egg",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> COTTON_CANDY = ITEMS.register("cotton_candy",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.COTTON_CANDY)));
+    public static final DeferredItem<Item> SOUL_PIE = ITEMS.register("soul_pie",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.SOUL_PIE)));
     public static final DeferredItem<Item> STACKED_PIE = ITEMS.register("stacked_pie",
             () -> new Item(new Item.Properties().food(ModFoodProperties.STACKED_PIE)));
 
     public static final DeferredItem<Item> POTION_COOKIE = ITEMS.register("potion_cookie",
             () -> new PotionItem(new Item.Properties().stacksTo(16).component(DataComponents.POTION_CONTENTS, PotionContents.EMPTY)));
+
+    public static final DeferredItem<Item> MONSTER_PIE_SPAWN_EGG = ITEMS.register("monster_pie_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.MONSTER_PIE,0xFFFFFF, 0xFFFFFF, new Item.Properties()));
 
 
 

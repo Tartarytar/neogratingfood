@@ -63,5 +63,13 @@ public class ModFoodProperties {
             .effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 0.5F)
             .alwaysEdible()
             .build();
-    public static final FoodProperties STACKED_PIE = new FoodProperties.Builder().nutrition(9).saturationModifier(0.8f).build();
+    public static final FoodProperties STACKED_PIE = new FoodProperties.Builder().nutrition(9).saturationModifier(0.6f).build();
+    public static final FoodProperties SOUL_PIE = new FoodProperties.Builder()
+            .nutrition(1)
+            .saturationModifier(0f)
+            .effect(new MobEffectInstance(MobEffects.BLINDNESS, 200, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.HARM, 1, 0), 1.0F)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties COTTON_CANDY = new FoodProperties.Builder().nutrition(1).saturationModifier(1f).fast().build();
 }

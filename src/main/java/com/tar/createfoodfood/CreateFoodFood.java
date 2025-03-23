@@ -94,6 +94,8 @@ public class CreateFoodFood
             event.accept(ModItems.CHEESE_PIE);
             event.accept(ModItems.ENDER_PIE);
             event.accept(ModItems.ODD_PIE);
+            event.accept(ModItems.SOUL_PIE);
+            event.accept(ModItems.MONSTER_PIE_SPAWN_EGG);
             event.accept(ModItems.BRASSWICH);
             event.accept(ModItems.ENDER_DOUGH);
             event.accept(ModItems.CHEESE);
@@ -102,6 +104,7 @@ public class CreateFoodFood
             event.accept(ModItems.ODD_SAUSAGE);
             event.accept(ModItems.BERRY_JAM);
             event.accept(ModItems.BERRY_JELLY);
+            event.accept(ModItems.COTTON_CANDY);
             event.accept(ModItems.POTION_COOKIE);
             //event.holders()
             //        .lookup(Registries.POTION)
@@ -114,6 +117,9 @@ public class CreateFoodFood
             //                        p_337923_.enabledFeatures()
             //                )
             //        );
+        }
+
+        if (event.getTabKey() ==  CreativeModeTabs.SPAWN_EGGS) {
         }
     }
 

@@ -3,6 +3,7 @@ package com.tar.createfoodfood.entity.custom;
 import com.tar.createfoodfood.entity.ModEntities;
 import com.tar.createfoodfood.item.ModItems;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.AnimationState;
@@ -15,12 +16,14 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.gameevent.GameEvent;
 import net.neoforged.bus.api.BusBuilder;
 import org.jetbrains.annotations.Nullable;
 
 public class MonsterPieEntity extends Animal {
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
+    public int eggTime = this.random.nextInt(6000) + 6000;
 
     public MonsterPieEntity(EntityType<? extends Animal> entityType, Level level) {
         super(entityType, level);
@@ -44,6 +47,7 @@ public class MonsterPieEntity extends Animal {
                 .add(Attributes.MOVEMENT_SPEED, 0.25D)
                 .add(Attributes.FOLLOW_RANGE, 4D);
     }
+
 
     @Override
     public boolean isFood(ItemStack stack) {
@@ -70,6 +74,17 @@ public class MonsterPieEntity extends Animal {
 
         if (this.level().isClientSide()){
             this.setupAnimationStates();
+        }
+    }
+
+@Override
+   public void aiStep() {
+        super.aiStep();
+        if (!this.level().isClientSide && this.isAlive() && !this.isBaby() && --this.eggTime <= 0) {
+            this.playSound(SoundEvents.CHICKEN_EGG, 1.0F, (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
+            this.spawnAtLocation(ModItems.COTTON_CANDY.get());
+            this.gameEvent(GameEvent.ENTITY_PLACE);
+            this.eggTime = this.random.nextInt(6000) + 6000;
         }
     }
 }
