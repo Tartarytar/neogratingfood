@@ -1,0 +1,18 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createfoodfood:pie_crust"
+    },
+    {
+      "item": "create:chocolate_glazed_berries"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "createfoodfood:berry_choco_pie"
+      }
+    }
+  ]
+}

@@ -23,6 +23,8 @@
   "item.createfoodfood.raging_pie": "Raging Pie",
   "item.createfoodfood.triple_stacked_pie": "Triple Stacked Pie",
   "item.createfoodfood.incomplete_stacked_pie": "Incomplete Stacked Pie",
+  "item.createfoodfood.berry_choco_pie": "Berry Choco Pie",
+  "item.createfoodfood.sweet_milk_pie": "Sweet Milk Pie",
 
   "item.createfoodfood.potion_cookie": "Potion Cookie",
   "item.createfoodfood.potion_cookie.effect.awkward": "Awkward Potion Cookie",
@@ -51,6 +53,24 @@
   "item.createfoodfood.potion_cookie.effect.weakness": "Potion Cookie of Weakness",
   "item.createfoodfood.potion_cookie.effect.weaving": "Potion Cookie of Weaving",
   "item.createfoodfood.potion_cookie.effect.wind_charged": "Potion Cookie of Wind Charging",
+
+  "item.createfoodfood.potion_cookie.effect.health_boost": "Potion Cookie of Health Boost",
+  "item.minecraft.lingering_potion.effect.health_boost": "Lingering Potion of Health Boost",
+  "item.minecraft.potion.effect.health_boost": "Potion of Health Boost",
+  "item.minecraft.splash_potion.effect.health_boost": "Splash Potion of Health Boost",
+  "item.minecraft.tipped_arrow.effect.health_boost": "Arrow of Health Boost",
+
+  "item.createfoodfood.potion_cookie.effect.long_health_boost": "Potion Cookie of Health Boost",
+  "item.minecraft.lingering_potion.effect.long_health_boost": "Lingering Potion of Health Boost",
+  "item.minecraft.potion.effect.long_health_boost": "Potion of Health Boost",
+  "item.minecraft.splash_potion.effect.long_health_boost": "Splash Potion of Health Boost",
+  "item.minecraft.tipped_arrow.effect.long_health_boost": "Arrow of Health Boost",
+
+  "item.createfoodfood.potion_cookie.effect.strong_health_boost": "Potion Cookie of Health Boost",
+  "item.minecraft.lingering_potion.effect.strong_health_boost": "Lingering Potion of Health Boost",
+  "item.minecraft.potion.effect.strong_health_boost": "Potion of Health Boost",
+  "item.minecraft.splash_potion.effect.strong_health_boost": "Splash Potion of Health Boost",
+  "item.minecraft.tipped_arrow.effect.strong_health_boost": "Arrow of Health Boost",
 
   "entity.mccourse.monster_pie": "Monster Pie"
 }

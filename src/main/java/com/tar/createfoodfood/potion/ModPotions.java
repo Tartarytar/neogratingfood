@@ -14,11 +14,11 @@ public class ModPotions {
             DeferredRegister.create(BuiltInRegistries.POTION, CreateFoodFood.MODID);
 
     public static final Holder<Potion> HEALTH_BOOST = POTIONS.register("health_boost",
-            () -> new Potion("health_boost",new MobEffectInstance(MobEffects.HEALTH_BOOST, 3600, 1)));
+            () -> new Potion(new MobEffectInstance(MobEffects.HEALTH_BOOST, 3600, 1)));
     public static final Holder<Potion> LONG_HEALTH_BOOST = POTIONS.register("long_health_boost",
-            () -> new Potion("long_health_boost",new MobEffectInstance(MobEffects.HEALTH_BOOST, 9600, 1)));
+            () -> new Potion(new MobEffectInstance(MobEffects.HEALTH_BOOST, 9600, 1)));
     public static final Holder<Potion> STRONG_HEALTH_BOOST = POTIONS.register("strong_health_boost",
-            () -> new Potion("strong_health_boost",new MobEffectInstance(MobEffects.HEALTH_BOOST, 1800, 2)));
+            () -> new Potion(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1800, 2)));
 
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);

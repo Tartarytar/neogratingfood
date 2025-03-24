@@ -93,6 +93,8 @@ public class CreateFoodFood
             event.accept(ModItems.STACKED_PIE);
             event.accept(ModItems.TRIPLE_STACKED_PIE);
             event.accept(ModItems.APPLE_HONEY_PIE);
+            event.accept(ModItems.BERRY_CHOCO_PIE);
+            event.accept(ModItems.SWEET_MILK_PIE);
             event.accept(ModItems.BERRY_PIE);
             event.accept(ModItems.CHEESE_PIE);
             event.accept(ModItems.ENDER_PIE);
@@ -111,6 +113,7 @@ public class CreateFoodFood
             event.accept(ModItems.BERRY_JELLY);
             event.accept(ModItems.COTTON_CANDY);
             event.accept(ModItems.POTION_COOKIE);
+
             //event.holders()
             //        .lookup(Registries.POTION)
             //        .ifPresent(

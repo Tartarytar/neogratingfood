@@ -8,8 +8,20 @@ public class ModFoodProperties {
     public static final FoodProperties PIE_CRUST = new FoodProperties.Builder().nutrition(5).saturationModifier(0.5f).build();
     public static final FoodProperties APPLE_HONEY_PIE = new FoodProperties.Builder()
             .nutrition(9)
-            .saturationModifier(1.5f)
+            .saturationModifier(1.4f)
             .effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1.0F)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties BERRY_CHOCO_PIE = new FoodProperties.Builder()
+            .nutrition(8)
+            .saturationModifier(1.2f)
+            .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 900, 0), 1.0F)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties SWEET_MILK_PIE = new FoodProperties.Builder()
+            .nutrition(7)
+            .saturationModifier(1f)
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 900, 0), 1.0F)
             .alwaysEdible()
             .build();
     public static final FoodProperties CHEESE = new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).fast().build();
@@ -17,7 +29,7 @@ public class ModFoodProperties {
     public static final FoodProperties BRASSWICH = new FoodProperties.Builder()
             .nutrition(6)
             .saturationModifier(1.F)
-            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 900, 0), 1.0F)
             .alwaysEdible()
             .build();
     public static final FoodProperties COOKED_EGG = new FoodProperties.Builder().nutrition(1).saturationModifier(0.1f).fast().build();
@@ -84,7 +96,7 @@ public class ModFoodProperties {
     public static final FoodProperties COTTON_PIE = new FoodProperties.Builder()
             .nutrition(6)
             .saturationModifier(0.8f)
-            .effect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1000, 1), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 10000, 0), 1.0F)
             .alwaysEdible()
             .build();
     public static final FoodProperties TRIPLE_STACKED_PIE = new FoodProperties.Builder()

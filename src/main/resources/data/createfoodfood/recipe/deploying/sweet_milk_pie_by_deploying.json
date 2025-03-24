@@ -1,0 +1,18 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createfoodfood:pie_crust"
+    },
+    {
+      "item": "create:sweet_roll"
+    }
+  ],
+  "results": [
+    {
+      "item": {
+        "id": "createfoodfood:sweet_milk_pie"
+      }
+    }
+  ]
+}
