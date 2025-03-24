@@ -14,6 +14,10 @@
     "createfoodfood:incomplete_odd_pie",
     "createfoodfood:soul_pie",
     "createfoodfood:monster_pie_spawn_egg",
-    "createfoodfood:incomplete_pie_egg"
+    "createfoodfood:incomplete_pie_egg",
+    "createfoodfood:raging_pie",
+    "createfoodfood:cotton_pie",
+    "createfoodfood:triple_stacked_pie",
+    "createfoodfood:incomplete_stacked_pie"
   ]
 }

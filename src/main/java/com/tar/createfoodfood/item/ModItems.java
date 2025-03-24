@@ -50,6 +50,8 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> INCOMPLETE_PIE_EGG = ITEMS.register("incomplete_pie_egg",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> INCOMPLETE_STACKED_PIE = ITEMS.register("incomplete_stacked_pie",
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COTTON_CANDY = ITEMS.register("cotton_candy",
             () -> new Item(new Item.Properties().food(ModFoodProperties.COTTON_CANDY)));
     public static final DeferredItem<Item> SOUL_PIE = ITEMS.register("soul_pie",
@@ -62,6 +64,12 @@ public class ModItems {
 
     public static final DeferredItem<Item> MONSTER_PIE_SPAWN_EGG = ITEMS.register("monster_pie_spawn_egg",
             () -> new DeferredSpawnEggItem(ModEntities.MONSTER_PIE,0xFFFFFF, 0xFFFFFF, new Item.Properties()));
+    public static final DeferredItem<Item> RAGING_PIE = ITEMS.register("raging_pie",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.RAGING_PIE)));
+    public static final DeferredItem<Item> COTTON_PIE = ITEMS.register("cotton_pie",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.COTTON_PIE)));
+    public static final DeferredItem<Item> TRIPLE_STACKED_PIE = ITEMS.register("triple_stacked_pie",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.TRIPLE_STACKED_PIE)));
 
 
 

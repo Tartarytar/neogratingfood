@@ -1,0 +1,81 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createfoodfood:stacked_pie"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": {
+        "id": "createfoodfood:triple_stacked_pie"
+      }
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createfoodfood:incomplete_stacked_pie"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 500,
+          "fluid": "minecraft:milk"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "createfoodfood:incomplete_stacked_pie"
+          }
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createfoodfood:incomplete_stacked_pie"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 500,
+          "fluid": "create:honey"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "createfoodfood:incomplete_stacked_pie"
+          }
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createfoodfood:incomplete_stacked_pie"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 500,
+          "fluid": "create:chocolate"
+        }
+      ],
+      "results": [
+        {
+          "item": {
+            "id": "createfoodfood:incomplete_stacked_pie"
+          }
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "item": {
+      "id": "createfoodfood:incomplete_stacked_pie"
+    }
+  }
+}

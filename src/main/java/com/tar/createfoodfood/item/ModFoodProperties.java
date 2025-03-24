@@ -8,7 +8,7 @@ public class ModFoodProperties {
     public static final FoodProperties PIE_CRUST = new FoodProperties.Builder().nutrition(5).saturationModifier(0.5f).build();
     public static final FoodProperties APPLE_HONEY_PIE = new FoodProperties.Builder()
             .nutrition(9)
-            .saturationModifier(1.8f)
+            .saturationModifier(1.5f)
             .effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1.0F)
             .alwaysEdible()
             .build();
@@ -72,4 +72,27 @@ public class ModFoodProperties {
             .alwaysEdible()
             .build();
     public static final FoodProperties COTTON_CANDY = new FoodProperties.Builder().nutrition(1).saturationModifier(1f).fast().build();
+    public static final FoodProperties RAGING_PIE = new FoodProperties.Builder()
+            .nutrition(1)
+            .saturationModifier(0f)
+            .effect(new MobEffectInstance(MobEffects.BLINDNESS, 250, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 250, 2), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 250, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.HARM, 1, 0), 1.0F)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties COTTON_PIE = new FoodProperties.Builder()
+            .nutrition(6)
+            .saturationModifier(0.8f)
+            .effect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 1000, 1), 1.0F)
+            .alwaysEdible()
+            .build();
+    public static final FoodProperties TRIPLE_STACKED_PIE = new FoodProperties.Builder()
+            .nutrition(10)
+            .saturationModifier(1f)
+            .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 500, 0), 1.0F)
+            .effect(new MobEffectInstance(MobEffects.REGENERATION, 500, 0), 1.0F)
+            .alwaysEdible()
+            .build();
 }

@@ -3,6 +3,7 @@ package com.tar.createfoodfood;
 import com.tar.createfoodfood.entity.ModEntities;
 import com.tar.createfoodfood.entity.client.MonsterPieRenderer;
 import com.tar.createfoodfood.item.ModItems;
+import com.tar.createfoodfood.potion.ModPotions;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.*;
 import org.slf4j.Logger;
@@ -61,6 +62,7 @@ public class CreateFoodFood
 
         ModItems.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModPotions.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -89,6 +91,7 @@ public class CreateFoodFood
             event.accept(ModItems.RAW_PIE_CRUST);
             event.accept(ModItems.PIE_CRUST);
             event.accept(ModItems.STACKED_PIE);
+            event.accept(ModItems.TRIPLE_STACKED_PIE);
             event.accept(ModItems.APPLE_HONEY_PIE);
             event.accept(ModItems.BERRY_PIE);
             event.accept(ModItems.CHEESE_PIE);
@@ -96,6 +99,8 @@ public class CreateFoodFood
             event.accept(ModItems.ODD_PIE);
             event.accept(ModItems.SOUL_PIE);
             event.accept(ModItems.MONSTER_PIE_SPAWN_EGG);
+            event.accept(ModItems.RAGING_PIE);
+            event.accept(ModItems.COTTON_PIE);
             event.accept(ModItems.BRASSWICH);
             event.accept(ModItems.ENDER_DOUGH);
             event.accept(ModItems.CHEESE);
